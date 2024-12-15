@@ -1,0 +1,3 @@
+.card:hover {
+    transform: scale(1.05) rotate(0deg); /* Aumenta el tamaño y rota ligeramente */
+}

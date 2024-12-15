@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario centrado</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2 class="text-center mb-4">Formulario de Registro</h2>
+    <form>
+        <!-- Nombres -->
+        <div class="mb-3">
+            <label for="firstName" class="form-label">Nombres</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Ingresa tus nombres" required>
+        </div>
+
+        <!-- Apellidos -->
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Ingresa tus apellidos" required>
+        </div>
+
+        <!-- Correo -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+
+        <!-- País -->
+        <div class="mb-3">
+            <label for="country" class="form-label">País</label>
+            <select class="form-select" id="country" required>
+                <option value="">Selecciona tu país</option>
+                <option value="pe">Perú</option>
+                <option value="mx">México</option>
+                <option value="co">Colombia</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+            </select>
+        </div>
+
+        <!-- Dirección -->
+        <div class="mb-3">
+            <label for="address" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="address" placeholder="Ingresa tu dirección" required>
+        </div>
+
+        <!-- Acepto términos -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="terms" required>
+            <label class="form-check-label" for="terms">
+                Acepto los <a href="#" class="text-decoration-none">términos y condiciones</a>
+            </label>
+        </div>
+
+        <!-- Botón Enviar -->
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary">Enviar formulario</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
